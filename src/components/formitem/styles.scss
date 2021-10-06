@@ -1,0 +1,25 @@
+.formItem {
+  :global {
+    .adm-card-header {
+      border-bottom: 0;
+    }
+    .adm-card-body {
+      padding: 0;
+    }
+  }
+
+  .moneyItem {
+    :global {
+      .adm-list-item-content-main {
+        :first-child {
+          text-align: right;
+          ::after {
+            content: '元';
+            color: #666;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
